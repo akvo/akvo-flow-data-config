@@ -1403,8 +1403,8 @@ transformers:
 
     - property: deviceIds
       external_name: deviceIds
-      # Type: Integer Stats: 49 properties of this type in this kind.
-      import_transform: transform.none_if_empty(int)
+      # Type: Integer Stats: 54 properties of this type in this kind.
+      import_transform: transform.regexp_to_list('(\w+)')
 
     - property: endDate
       external_name: endDate
@@ -1434,8 +1434,8 @@ transformers:
 
     - property: surveyIds
       external_name: surveyIds
-      # Type: Integer Stats: 51 properties of this type in this kind.
-      import_transform: transform.none_if_empty(int)
+      # Type: Integer Stats: 54 properties of this type in this kind.
+      import_transform: transform.regexp_to_list('(\w+)')
 
 
 - kind: SurveyAttributeMapping
