@@ -1384,58 +1384,58 @@ transformers:
       import_transform: db.Text
 
 
-- kind: SurveyAssignment
-  connector: csv
-  connector_options:
-    encoding: utf-8
-    columns: from_header 
-  property_map:
-    - property: __key__
-      external_name: key
-      export_transform: transform.key_id_or_name_as_string
-      import_transform: transform.create_foreign_key('SurveyAssignment', key_is_id=True)
-
-    - property: createdDateTime
-      external_name: createdDateTime
-      # Type: Date/Time Stats: 30 properties of this type in this kind.
-      import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
-      export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
-
-    - property: deviceIds
-      external_name: deviceIds
-      # Type: Integer Stats: 54 properties of this type in this kind.
-      import_transform: transform.regexp_to_list('(\w+)')
-
-    - property: endDate
-      external_name: endDate
-      # Type: Date/Time Stats: 30 properties of this type in this kind.
-      import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
-      export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
-
-    - property: language
-      external_name: language
-      # Type: String Stats: 13 properties of this type in this kind.
-
-    - property: lastUpdateDateTime
-      external_name: lastUpdateDateTime
-      # Type: Date/Time Stats: 30 properties of this type in this kind.
-      import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
-      export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
-
-    - property: name
-      external_name: name
-      # Type: String Stats: 30 properties of this type in this kind.
-
-    - property: startDate
-      external_name: startDate
-      # Type: Date/Time Stats: 30 properties of this type in this kind.
-      import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
-      export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
-
-    - property: surveyIds
-      external_name: surveyIds
-      # Type: Integer Stats: 54 properties of this type in this kind.
-      import_transform: transform.regexp_to_list('(\w+)')
+#- kind: SurveyAssignment
+#  connector: csv
+#  connector_options:
+#    encoding: utf-8
+#    columns: from_header 
+#  property_map:
+#    - property: __key__
+#      external_name: key
+#      export_transform: transform.key_id_or_name_as_string
+#      import_transform: transform.create_foreign_key('SurveyAssignment', key_is_id=True)
+#
+#    - property: createdDateTime
+#      external_name: createdDateTime
+#      # Type: Date/Time Stats: 30 properties of this type in this kind.
+#      import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
+#      export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
+#
+#    - property: deviceIds
+#      external_name: deviceIds
+#      # Type: Integer Stats: 49 properties of this type in this kind.
+#      import_transform: transform.none_if_empty(int)
+#
+#    - property: endDate
+#      external_name: endDate
+#      # Type: Date/Time Stats: 30 properties of this type in this kind.
+#      import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
+#      export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
+#
+#    - property: language
+#      external_name: language
+#      # Type: String Stats: 13 properties of this type in this kind.
+#
+#    - property: lastUpdateDateTime
+#      external_name: lastUpdateDateTime
+#      # Type: Date/Time Stats: 30 properties of this type in this kind.
+#      import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
+#      export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
+#
+#    - property: name
+#      external_name: name
+#      # Type: String Stats: 30 properties of this type in this kind.
+#
+#    - property: startDate
+#      external_name: startDate
+#      # Type: Date/Time Stats: 30 properties of this type in this kind.
+#      import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
+#      export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
+#
+#    - property: surveyIds
+#      external_name: surveyIds
+#      # Type: Integer Stats: 51 properties of this type in this kind.
+#      import_transform: transform.none_if_empty(int)
 
 
 - kind: SurveyAttributeMapping
@@ -2210,25 +2210,25 @@ transformers:
       # Type: String Stats: 3 properties of this type in this kind.
 
 
-- kind: _ah_SESSION
-  connector: csv
-  connector_options:
-    encoding: utf-8
-    columns: from_header 
-  property_map:
-    - property: __key__
-      external_name: key
-      export_transform: transform.key_id_or_name_as_string
-      import_transform: transform.create_foreign_key('_ah_SESSION', key_is_id=True)
-
-    - property: _expires
-      external_name: _expires
-      # Type: Integer Stats: 20 properties of this type in this kind.
-      import_transform: transform.none_if_empty(int)
-
-    - property: _values
-      external_name: _values
-      # Type: Blob Stats: 20 properties of this type in this kind.
-      import_transform: transform.blobproperty_from_base64
-      export_transform: base64.b64encode
-
+#- kind: _ah_SESSION
+#  connector: csv
+#  connector_options:
+#    encoding: utf-8
+#    columns: from_header 
+#  property_map:
+#    - property: __key__
+#      external_name: key
+#      export_transform: transform.key_id_or_name_as_string
+#      import_transform: transform.create_foreign_key('_ah_SESSION', key_is_id=True)
+#
+#    - property: _expires
+#      external_name: _expires
+#      # Type: Integer Stats: 20 properties of this type in this kind.
+#      import_transform: transform.none_if_empty(int)
+#
+#    - property: _values
+#      external_name: _values
+#      # Type: Blob Stats: 20 properties of this type in this kind.
+#      import_transform: transform.blobproperty_from_base64
+#      export_transform: base64.b64encode
+#
