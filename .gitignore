@@ -1,0 +1,16 @@
+# Globally ignored files
+.DS_Store
+.gradle
+.gwt-log
+*.rpc
+*.class
+*.swp
+
+# Eclipse files
+.classpath
+.externalToolBuilders
+.project
+.settings
+
+Geotools/target/*
+Geotools/bin/*
