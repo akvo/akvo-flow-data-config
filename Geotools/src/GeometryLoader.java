@@ -30,9 +30,12 @@ import com.vividsolutions.jts.io.WKTReader;
 
 /* This class uses the data files from http://www.gadm.org/
  * 
- * 
- * 
+ * Usage example:
+ * Country data: 
+ * http://akvoflowsandbox.appspot.com/ /Users/markwestra/1_Akvo/Software/1.FLOW/OGR/data/TM_WORLD_BORDERS-0.3/TM_WORLD_BORDERS-0.3.shp|LATLONG|29|0.0|null|COUNTRY
  *
+ * Sub country info
+ * http://akvoflowsandbox.appspot.com/ /Users/markwestra/1_Akvo/Software/1.FLOW/OGR/data/IDN_adm/IDN_adm2.shp|LATLONG|29|0.0|ID|SUB_COUNTRY_OTHER
  */
 public class GeometryLoader {
 	private TreeMap<String, String> attributeIdentifierMapping = new TreeMap<String, String>();
