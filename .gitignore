@@ -17,3 +17,4 @@ Geotools/bin/*
 
 # Stat files
 stats/stats.txt
+stats/instances.txt
