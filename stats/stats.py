@@ -54,7 +54,7 @@ def stats():
         statsWriter.writerow(["Instance"] + KINDS)
         for i in stats.keys():
             statsWriter.writerow([i] + stats[i])
-    print "Finished. Stats written to 'stats.txt'"
+    print "Finished. Stats written to '/tmp/stats.txt'"
 
 if __name__ == "__main__":
     stats()
