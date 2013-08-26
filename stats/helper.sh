@@ -1,7 +1,8 @@
 #!/bin/sh
 
-find /opt/akvo/flow/repo/akvo-flow-server-config/ -name 'appengine-web.xml' -exec grep '<application>' {} \; | sed 's/<[/]*application>//g' | sed 's/^[ \t]*//;s/[ \t]*$//' | sort > /tmp/instances.txt
+find "$1" -name 'appengine-web.xml' -exec grep '<application>' {} \; | sed 's/<[/]*application>//g' | sed 's/^[ \t]*//;s/[ \t]*$//' | sort > /tmp/instances.txt
 
+cd "$2"
 python stats.py "$1" "$2" /tmp/instances.txt
 
 mkdir -p /tmp/akvo/flow/reports/stats
