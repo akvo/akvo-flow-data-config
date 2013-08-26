@@ -49,7 +49,7 @@ def stats():
     # Dictionary holding each instance and its correspondent stats list
     stats = {instance: get_stats(instance) for instance in read_instances(config_file)}
 
-    with open("stats.txt", "wb") as csvfile:
+    with open("/tmp/stats.txt", "wb") as csvfile:
         statsWriter = csv.writer(csvfile)
         statsWriter.writerow(["Instance"] + KINDS)
         for i in stats.keys():
