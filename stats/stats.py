@@ -18,7 +18,7 @@ import csv
 from twill import get_browser
 from twill.commands import fv, code
 
-KINDS = ["Device", "SurveyInstance", "Survey"]
+KINDS = ["Device", "SurveyInstance", "Survey", "User"]
 
 AUTH_URL = "https://accounts.google.com/ServiceLogin"
 BASE_URL = "https://appengine.google.com/datastore/statistics?app_id=s~"
