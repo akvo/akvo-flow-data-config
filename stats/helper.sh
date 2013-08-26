@@ -4,4 +4,7 @@ find /opt/akvo/flow/repo/akvo-flow-server-config/ -name 'appengine-web.xml' -exe
 
 python stats.py "$1" "$2" /tmp/instances.txt
 
+mkdir -p /tmp/akvo/flow/reports/stats
+cp stats.txt /tmp/akvo/flow/reports/stats/$(date +"%Y-%M-%d").csv
+
 exit 0
