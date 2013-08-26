@@ -14,3 +14,6 @@
 
 Geotools/target/*
 Geotools/bin/*
+
+# Stat files
+stats/stats.txt
