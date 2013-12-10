@@ -34,8 +34,8 @@ def read_instances(filename):
 def authenticate(email, pwd):
     print "Authenticating Google Account: %s" % email
     browser.go(AUTH_URL)
-    fv("2", "Email", email)
-    fv("2", "Passwd", pwd)
+    fv("1", "Email", email)
+    fv("1", "Passwd", pwd)
     browser.submit()
     code(200)
 
