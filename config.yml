@@ -1261,6 +1261,11 @@ transformers:
       # Type: Integer Stats: 315 properties of this type in this kind.
       import_transform: transform.none_if_empty(int)
 
+    - property: geoLocked
+      external_name: geoLocked
+      # Type: Boolean Stats: 2382 properties of this type in this kind.
+      import_transform: transform.regexp_bool('true', re.IGNORECASE)
+
     - property: immutable
       external_name: immutable
       # Type: Boolean Stats: 506 properties of this type in this kind.
@@ -1276,6 +1281,16 @@ transformers:
       # Type: Date/Time Stats: 318 properties of this type in this kind.
       import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
       export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
+
+    - property: localeLocationFlag
+      external_name: localeLocationFlag
+      # Type: Boolean Stats: 819 properties of this type in this kind.
+      import_transform: transform.regexp_bool('true', re.IGNORECASE)
+
+    - property: localeNameFlag
+      external_name: localeNameFlag
+      # Type: Boolean Stats: 819 properties of this type in this kind.
+      import_transform: transform.regexp_bool('true', re.IGNORECASE)
 
     - property: mandatoryFlag
       external_name: mandatoryFlag
@@ -1306,9 +1321,19 @@ transformers:
       # Type: Integer Stats: 734 properties of this type in this kind.
       import_transform: transform.none_if_empty(int)
 
-    - property: referenceId
-      external_name: referenceId
-      # Type: String Stats: 203 properties of this type in this kind.
+    - property: questionId
+      external_name: questionId
+      # Type: String Stats: 684 properties of this type in this kind.
+
+    - property: requireDoubleEntry
+      external_name: requireDoubleEntry
+      # Type: Boolean Stats: 2382 properties of this type in this kind.
+      import_transform: transform.regexp_bool('true', re.IGNORECASE)
+
+    - property: sourceId
+      external_name: sourceId
+      # Type: Integer Stats: 1387 properties of this type in this kind.
+      import_transform: transform.none_if_empty(int)
 
     - property: surveyId
       external_name: surveyId
@@ -1553,6 +1578,20 @@ transformers:
       import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
       export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
 
+    - property: monitoringGroup
+      external_name: monitoringGroup
+      # Type: Boolean Stats: 6 properties of this type in this kind.
+      import_transform: transform.regexp_bool('true', re.IGNORECASE)
+
+    - property: name
+      external_name: name
+      # Type: String Stats: 16 properties of this type in this kind.
+
+    - property: newLocaleSurveyId
+      external_name: newLocaleSurveyId
+      # Type: Integer Stats: 6 properties of this type in this kind.
+      import_transform: transform.none_if_empty(int)
+
 
 - kind: SurveyInstanceSummary
   connector: csv
@@ -1570,10 +1609,6 @@ transformers:
       # Type: Date/Time Stats: 1810 properties of this type in this kind.
       import_transform: transform.import_date_time('%Y-%m-%dT%H:%M:%S')
       export_transform: transform.export_date_time('%Y-%m-%dT%H:%M:%S')
-
-    - property: communityCode
-      external_name: communityCode
-      # Type: String Stats: 95 properties of this type in this kind.
 
     - property: count
       external_name: count
