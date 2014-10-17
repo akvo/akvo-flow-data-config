@@ -29,7 +29,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -55,7 +55,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header  
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -99,7 +99,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -148,7 +148,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -314,7 +314,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -360,7 +360,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -387,7 +387,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -423,7 +423,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -483,7 +483,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -533,7 +533,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -594,7 +594,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -627,7 +627,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -674,7 +674,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -705,7 +705,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -739,7 +739,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -793,7 +793,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -833,7 +833,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -881,7 +881,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -932,7 +932,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1024,7 +1024,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1056,7 +1056,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1121,7 +1121,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1167,7 +1167,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1209,7 +1209,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1361,7 +1361,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1413,7 +1413,7 @@ transformers:
 #  connector: csv
 #  connector_options:
 #    encoding: utf-8
-#    columns: from_header 
+#    columns: from_header
 #  property_map:
 #    - property: __key__
 #      external_name: key
@@ -1467,7 +1467,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1517,7 +1517,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1551,7 +1551,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1597,7 +1597,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1636,7 +1636,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1718,7 +1718,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1762,7 +1762,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1799,7 +1799,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1862,7 +1862,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -1976,7 +1976,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -2049,12 +2049,15 @@ transformers:
       external_name: sublevel2
       # Type: String Stats: 89 properties of this type in this kind.
 
+    - property: surveyGroupId
+      external_name: surveyGroupId
+      import_transform: transform.none_if_empty(int)
 
 - kind: Translation
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -2095,7 +2098,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -2115,7 +2118,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -2144,7 +2147,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -2185,7 +2188,7 @@ transformers:
   connector: csv
   connector_options:
     encoding: utf-8
-    columns: from_header 
+    columns: from_header
   property_map:
     - property: __key__
       external_name: key
@@ -2249,7 +2252,7 @@ transformers:
 #  connector: csv
 #  connector_options:
 #    encoding: utf-8
-#    columns: from_header 
+#    columns: from_header
 #  property_map:
 #    - property: __key__
 #      external_name: key
