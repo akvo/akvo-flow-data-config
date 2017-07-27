@@ -4,6 +4,9 @@
 *.class
 *.swp
 
+# Gradle
+.gradle
+
 # Eclipse files
 .externalToolBuilders
 .settings
