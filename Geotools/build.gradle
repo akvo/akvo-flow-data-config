@@ -45,6 +45,10 @@ jar {
   manifest {
     attributes 'Main-Class': 'GeometryLoader'
   }
+
+  from {
+    configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+  }
 }
 
 defaultTasks 'clean', 'build'
