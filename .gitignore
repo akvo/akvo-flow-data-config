@@ -1,19 +1,15 @@
 # Globally ignored files
 .DS_Store
-.gradle
-.gwt-log
 *.rpc
 *.class
 *.swp
 
-# Eclipse files
-.classpath
-.externalToolBuilders
-.project
-.settings
+# Gradle
+.gradle
 
-Geotools/target/*
-Geotools/bin/*
+# Eclipse files
+.externalToolBuilders
+.settings
 
 # Stat files
 stats/stats.txt
