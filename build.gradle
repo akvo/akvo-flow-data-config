@@ -19,4 +19,6 @@ buildscript {
   repositories {
     mavenCentral()
   }
+
+  defaultTasks 'clean', 'build'
 }
